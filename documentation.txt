@@ -1,0 +1,14 @@
+DOCUMENTATION:
+
+TO LOAD AND COMPILE:
+Since this program is built for IOS use, it must be compiled/downloaded on a Mac with XCode installed. Unzip the file CS50 Final project—this file contains much of the supporting infrastructure necessary for the compilation of the app, such as the Firebase Reference. Once unzipped, delve into the Graffiti folder and open graffiti.xcodeproj using XCode. If you have access to the apple developer SDK, as well as access to an iOS device, you can load the app onto that device. Simply connect the iOS device to the computer, and then (on XCcode), go to Windows>> and add the device to the list of connected devices. After that, select the device in question as the active one, and hit the play button in the top left corner to build the app on the iOS device. After the app is built, it can be independently run off of the iOS device. If you do not have access to the developer SDK, simply press the run button in XCode to launch a simulation of the app within the computer. The capabilities of Graffiti are perhaps best showcased when it is being used by two or more users at once, so consider running Graffiti concurrently on your computer and iOS device. 
+
+TO USE:
+When the app loads, you will be prompted for a boardname. Enter in a boardname of your choice.If a board (or wall) with that name already exists, you’ll be able to see what other users have written on that wall and leave your own mark. Try inputting CS50, Malan, or Graffiti as the boardname, or explore and see what you find.   If no wall with that exists, you can still write on that wall, and what you leave will be available for others to find. All updates to walls are in real time—if you and other users are on the same wall, you’ll each be able to see the work the others are doing as they do it. This creates opportunities for boards used as private chatrooms—my dorm uses the WiggC11 board to leave each other reminders/play rousing games of tic-tac-toe. 
+
+To actually begin drawing, simply use your finger to draw on the screen. Tap the color button in the bottom-left corner to bring up a menu that allows you to change your color, hue , and brightness by dragging around a reticule and a slider. The Erase All button in the bottom center deletes all the current art on a board, so use with discretion! Erase All must be double-tapped to activate (so you don’t inadvertently destroy your creations). The board, unfortunately, does not log erase actions in real-time, so the reload button in the bottom right is used to check for erase actions.
+
+After you’re done tagging, hit the back button in the upper left corner to choose a new board. 
+
+
+

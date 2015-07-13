@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		411CBE651A23EFCE006CE565 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411CBE641A23EFCE006CE565 /* CFNetwork.framework */; };
+		411CBE671A23EFCE006CE565 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411CBE661A23EFCE006CE565 /* Security.framework */; };
+		411CBE691A23EFCE006CE565 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411CBE681A23EFCE006CE565 /* SystemConfiguration.framework */; };
+		411CBE6E1A23EFCE006CE565 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 411CBE6D1A23EFCE006CE565 /* main.m */; };
+		411CBE711A23EFCE006CE565 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 411CBE701A23EFCE006CE565 /* AppDelegate.m */; };
+		411CBE741A23EFCE006CE565 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 411CBE721A23EFCE006CE565 /* Main.storyboard */; };
+		411CBE7B1A23EFCF006CE565 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 411CBE7A1A23EFCF006CE565 /* Images.xcassets */; };
+		411CBE7E1A23EFCF006CE565 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 411CBE7C1A23EFCF006CE565 /* LaunchScreen.xib */; };
+		411CBE8A1A23EFCF006CE565 /* SketchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 411CBE891A23EFCF006CE565 /* SketchTests.m */; };
+		411CBE961A23F00F006CE565 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411CBE951A23F00F006CE565 /* UIKit.framework */; };
+		411CBE9A1A23F026006CE565 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 411CBE991A23F026006CE565 /* libc++.dylib */; };
+		411CBE9C1A23F032006CE565 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 411CBE9B1A23F032006CE565 /* libicucore.dylib */; };
+		411CBE9F1A23F0C4006CE565 /* SketchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411CBE9E1A23F0C4006CE565 /* SketchViewController.m */; };
+		411CBEA01A23F0C4006CE565 /* SketchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411CBE9E1A23F0C4006CE565 /* SketchViewController.m */; };
+		411CBEA31A23F0F2006CE565 /* SketchDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 411CBEA21A23F0F2006CE565 /* SketchDrawView.m */; };
+		411CBEA41A23F0F2006CE565 /* SketchDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 411CBEA21A23F0F2006CE565 /* SketchDrawView.m */; };
+		411CBEA71A23F11E006CE565 /* SketchPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 411CBEA61A23F11E006CE565 /* SketchPath.m */; };
+		411CBEA81A23F11E006CE565 /* SketchPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 411CBEA61A23F11E006CE565 /* SketchPath.m */; };
+		411CBEAB1A23F14A006CE565 /* SketchColorPickController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411CBEAA1A23F14A006CE565 /* SketchColorPickController.m */; };
+		411CBEAC1A23F14A006CE565 /* SketchColorPickController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411CBEAA1A23F14A006CE565 /* SketchColorPickController.m */; };
+		411CBEB61A23F171006CE565 /* nko_brightness_guide.png in Resources */ = {isa = PBXBuildFile; fileRef = 411CBEAF1A23F171006CE565 /* nko_brightness_guide.png */; };
+		411CBEB71A23F171006CE565 /* nko_brightness_guide.png in Resources */ = {isa = PBXBuildFile; fileRef = 411CBEAF1A23F171006CE565 /* nko_brightness_guide.png */; };
+		411CBEB81A23F171006CE565 /* nko_brightness_guide@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 411CBEB01A23F171006CE565 /* nko_brightness_guide@2x.png */; };
+		411CBEB91A23F171006CE565 /* nko_brightness_guide@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 411CBEB01A23F171006CE565 /* nko_brightness_guide@2x.png */; };
+		411CBEBA1A23F171006CE565 /* nko_colormap.png in Resources */ = {isa = PBXBuildFile; fileRef = 411CBEB11A23F171006CE565 /* nko_colormap.png */; };
+		411CBEBB1A23F171006CE565 /* nko_colormap.png in Resources */ = {isa = PBXBuildFile; fileRef = 411CBEB11A23F171006CE565 /* nko_colormap.png */; };
+		411CBEBC1A23F171006CE565 /* NKOColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 411CBEB31A23F171006CE565 /* NKOColorPickerView.m */; };
+		411CBEBD1A23F171006CE565 /* NKOColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 411CBEB31A23F171006CE565 /* NKOColorPickerView.m */; };
+		411CBEBF1A23F893006CE565 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411CBEBE1A23F893006CE565 /* CoreGraphics.framework */; };
+		412190651A23FE83001C5B98 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 412190641A23FE83001C5B98 /* Firebase.framework */; };
+		412190661A23FE83001C5B98 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 412190641A23FE83001C5B98 /* Firebase.framework */; };
+		5C4785361A34207600A1006F /* VioletGraffiti.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5C4785351A34207600A1006F /* VioletGraffiti.jpg */; };
+		5C4785381A3425FC00A1006F /* purplegraff2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5C4785371A3425FC00A1006F /* purplegraff2.jpg */; };
+		5C52E7FF1A2D0F3700D79C6B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C52E7FE1A2D0F3700D79C6B /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		411CBE841A23EFCF006CE565 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 411CBE591A23EFCE006CE565 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 411CBE601A23EFCE006CE565;
+			remoteInfo = Sketch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		411CBE611A23EFCE006CE565 /* Sketch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sketch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		411CBE641A23EFCE006CE565 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		411CBE661A23EFCE006CE565 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		411CBE681A23EFCE006CE565 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		411CBE6C1A23EFCE006CE565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		411CBE6D1A23EFCE006CE565 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		411CBE6F1A23EFCE006CE565 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		411CBE701A23EFCE006CE565 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		411CBE731A23EFCE006CE565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		411CBE7A1A23EFCF006CE565 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		411CBE7D1A23EFCF006CE565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		411CBE831A23EFCF006CE565 /* SketchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SketchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		411CBE881A23EFCF006CE565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		411CBE891A23EFCF006CE565 /* SketchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SketchTests.m; sourceTree = "<group>"; };
+		411CBE951A23F00F006CE565 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		411CBE991A23F026006CE565 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		411CBE9B1A23F032006CE565 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		411CBE9D1A23F0AF006CE565 /* SketchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SketchViewController.h; sourceTree = "<group>"; };
+		411CBE9E1A23F0C4006CE565 /* SketchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SketchViewController.m; sourceTree = "<group>"; };
+		411CBEA11A23F0DD006CE565 /* SketchDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SketchDrawView.h; sourceTree = "<group>"; };
+		411CBEA21A23F0F2006CE565 /* SketchDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SketchDrawView.m; sourceTree = SOURCE_ROOT; };
+		411CBEA51A23F110006CE565 /* SketchPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SketchPath.h; sourceTree = "<group>"; };
+		411CBEA61A23F11E006CE565 /* SketchPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SketchPath.m; sourceTree = "<group>"; };
+		411CBEA91A23F139006CE565 /* SketchColorPickController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SketchColorPickController.h; sourceTree = "<group>"; };
+		411CBEAA1A23F14A006CE565 /* SketchColorPickController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SketchColorPickController.m; sourceTree = "<group>"; };
+		411CBEAF1A23F171006CE565 /* nko_brightness_guide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nko_brightness_guide.png; sourceTree = "<group>"; };
+		411CBEB01A23F171006CE565 /* nko_brightness_guide@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nko_brightness_guide@2x.png"; sourceTree = "<group>"; };
+		411CBEB11A23F171006CE565 /* nko_colormap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nko_colormap.png; sourceTree = "<group>"; };
+		411CBEB21A23F171006CE565 /* NKOColorPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKOColorPickerView.h; sourceTree = "<group>"; };
+		411CBEB31A23F171006CE565 /* NKOColorPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKOColorPickerView.m; sourceTree = "<group>"; };
+		411CBEBE1A23F893006CE565 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		412190641A23FE83001C5B98 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		5C4785351A34207600A1006F /* VioletGraffiti.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VioletGraffiti.jpg; sourceTree = "<group>"; };
+		5C4785371A3425FC00A1006F /* purplegraff2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = purplegraff2.jpg; sourceTree = "<group>"; };
+		5C52E7FD1A2D0F3700D79C6B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5C52E7FE1A2D0F3700D79C6B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		411CBE5E1A23EFCE006CE565 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				411CBEBF1A23F893006CE565 /* CoreGraphics.framework in Frameworks */,
+				411CBE9C1A23F032006CE565 /* libicucore.dylib in Frameworks */,
+				411CBE9A1A23F026006CE565 /* libc++.dylib in Frameworks */,
+				412190651A23FE83001C5B98 /* Firebase.framework in Frameworks */,
+				411CBE961A23F00F006CE565 /* UIKit.framework in Frameworks */,
+				411CBE671A23EFCE006CE565 /* Security.framework in Frameworks */,
+				411CBE691A23EFCE006CE565 /* SystemConfiguration.framework in Frameworks */,
+				411CBE651A23EFCE006CE565 /* CFNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		411CBE801A23EFCF006CE565 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				412190661A23FE83001C5B98 /* Firebase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		411CBE581A23EFCE006CE565 = {
+			isa = PBXGroup;
+			children = (
+				411CBE6A1A23EFCE006CE565 /* Sketch */,
+				411CBE861A23EFCF006CE565 /* SketchTests */,
+				411CBE631A23EFCE006CE565 /* Frameworks */,
+				411CBE621A23EFCE006CE565 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		411CBE621A23EFCE006CE565 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				411CBE611A23EFCE006CE565 /* Sketch.app */,
+				411CBE831A23EFCF006CE565 /* SketchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		411CBE631A23EFCE006CE565 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				412190641A23FE83001C5B98 /* Firebase.framework */,
+				411CBEBE1A23F893006CE565 /* CoreGraphics.framework */,
+				411CBE9B1A23F032006CE565 /* libicucore.dylib */,
+				411CBE991A23F026006CE565 /* libc++.dylib */,
+				411CBE681A23EFCE006CE565 /* SystemConfiguration.framework */,
+				411CBE951A23F00F006CE565 /* UIKit.framework */,
+				411CBE641A23EFCE006CE565 /* CFNetwork.framework */,
+				411CBE661A23EFCE006CE565 /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		411CBE6A1A23EFCE006CE565 /* Sketch */ = {
+			isa = PBXGroup;
+			children = (
+				411CBEAD1A23F171006CE565 /* NKOColorPicker */,
+				411CBE6F1A23EFCE006CE565 /* AppDelegate.h */,
+				411CBE701A23EFCE006CE565 /* AppDelegate.m */,
+				411CBE9D1A23F0AF006CE565 /* SketchViewController.h */,
+				411CBE9E1A23F0C4006CE565 /* SketchViewController.m */,
+				5C52E7FD1A2D0F3700D79C6B /* ViewController.h */,
+				5C52E7FE1A2D0F3700D79C6B /* ViewController.m */,
+				411CBEA11A23F0DD006CE565 /* SketchDrawView.h */,
+				411CBEA21A23F0F2006CE565 /* SketchDrawView.m */,
+				411CBEA51A23F110006CE565 /* SketchPath.h */,
+				411CBEA61A23F11E006CE565 /* SketchPath.m */,
+				411CBEA91A23F139006CE565 /* SketchColorPickController.h */,
+				411CBEAA1A23F14A006CE565 /* SketchColorPickController.m */,
+				411CBE7A1A23EFCF006CE565 /* Images.xcassets */,
+				411CBE721A23EFCE006CE565 /* Main.storyboard */,
+				411CBE7C1A23EFCF006CE565 /* LaunchScreen.xib */,
+				411CBE6B1A23EFCE006CE565 /* Supporting Files */,
+			);
+			path = Sketch;
+			sourceTree = "<group>";
+		};
+		411CBE6B1A23EFCE006CE565 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C4785371A3425FC00A1006F /* purplegraff2.jpg */,
+				5C4785351A34207600A1006F /* VioletGraffiti.jpg */,
+				411CBE6C1A23EFCE006CE565 /* Info.plist */,
+				411CBE6D1A23EFCE006CE565 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		411CBE861A23EFCF006CE565 /* SketchTests */ = {
+			isa = PBXGroup;
+			children = (
+				411CBE891A23EFCF006CE565 /* SketchTests.m */,
+				411CBE871A23EFCF006CE565 /* Supporting Files */,
+			);
+			path = SketchTests;
+			sourceTree = "<group>";
+		};
+		411CBE871A23EFCF006CE565 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				411CBE881A23EFCF006CE565 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		411CBEAD1A23F171006CE565 /* NKOColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				411CBEAF1A23F171006CE565 /* nko_brightness_guide.png */,
+				411CBEB01A23F171006CE565 /* nko_brightness_guide@2x.png */,
+				411CBEB11A23F171006CE565 /* nko_colormap.png */,
+				411CBEB21A23F171006CE565 /* NKOColorPickerView.h */,
+				411CBEB31A23F171006CE565 /* NKOColorPickerView.m */,
+			);
+			path = NKOColorPicker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		411CBE601A23EFCE006CE565 /* Sketch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 411CBE8D1A23EFCF006CE565 /* Build configuration list for PBXNativeTarget "Sketch" */;
+			buildPhases = (
+				411CBE5D1A23EFCE006CE565 /* Sources */,
+				411CBE5E1A23EFCE006CE565 /* Frameworks */,
+				411CBE5F1A23EFCE006CE565 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sketch;
+			productName = Sketch;
+			productReference = 411CBE611A23EFCE006CE565 /* Sketch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		411CBE821A23EFCF006CE565 /* SketchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 411CBE901A23EFCF006CE565 /* Build configuration list for PBXNativeTarget "SketchTests" */;
+			buildPhases = (
+				411CBE7F1A23EFCF006CE565 /* Sources */,
+				411CBE801A23EFCF006CE565 /* Frameworks */,
+				411CBE811A23EFCF006CE565 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				411CBE851A23EFCF006CE565 /* PBXTargetDependency */,
+			);
+			name = SketchTests;
+			productName = SketchTests;
+			productReference = 411CBE831A23EFCF006CE565 /* SketchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		411CBE591A23EFCE006CE565 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Tiber Studio LLC";
+				TargetAttributes = {
+					411CBE601A23EFCE006CE565 = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = M7TBQPY26A;
+					};
+					411CBE821A23EFCF006CE565 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 411CBE601A23EFCE006CE565;
+					};
+				};
+			};
+			buildConfigurationList = 411CBE5C1A23EFCE006CE565 /* Build configuration list for PBXProject "Graffiti" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 411CBE581A23EFCE006CE565;
+			productRefGroup = 411CBE621A23EFCE006CE565 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				411CBE601A23EFCE006CE565 /* Sketch */,
+				411CBE821A23EFCF006CE565 /* SketchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		411CBE5F1A23EFCE006CE565 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				411CBEB61A23F171006CE565 /* nko_brightness_guide.png in Resources */,
+				411CBE741A23EFCE006CE565 /* Main.storyboard in Resources */,
+				411CBEBA1A23F171006CE565 /* nko_colormap.png in Resources */,
+				411CBE7E1A23EFCF006CE565 /* LaunchScreen.xib in Resources */,
+				411CBEB81A23F171006CE565 /* nko_brightness_guide@2x.png in Resources */,
+				411CBE7B1A23EFCF006CE565 /* Images.xcassets in Resources */,
+				5C4785361A34207600A1006F /* VioletGraffiti.jpg in Resources */,
+				5C4785381A3425FC00A1006F /* purplegraff2.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		411CBE811A23EFCF006CE565 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				411CBEB91A23F171006CE565 /* nko_brightness_guide@2x.png in Resources */,
+				411CBEB71A23F171006CE565 /* nko_brightness_guide.png in Resources */,
+				411CBEBB1A23F171006CE565 /* nko_colormap.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		411CBE5D1A23EFCE006CE565 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				411CBEBC1A23F171006CE565 /* NKOColorPickerView.m in Sources */,
+				411CBE711A23EFCE006CE565 /* AppDelegate.m in Sources */,
+				5C52E7FF1A2D0F3700D79C6B /* ViewController.m in Sources */,
+				411CBE9F1A23F0C4006CE565 /* SketchViewController.m in Sources */,
+				411CBEAB1A23F14A006CE565 /* SketchColorPickController.m in Sources */,
+				411CBEA31A23F0F2006CE565 /* SketchDrawView.m in Sources */,
+				411CBEA71A23F11E006CE565 /* SketchPath.m in Sources */,
+				411CBE6E1A23EFCE006CE565 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		411CBE7F1A23EFCF006CE565 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				411CBEA41A23F0F2006CE565 /* SketchDrawView.m in Sources */,
+				411CBEBD1A23F171006CE565 /* NKOColorPickerView.m in Sources */,
+				411CBEA01A23F0C4006CE565 /* SketchViewController.m in Sources */,
+				411CBEA81A23F11E006CE565 /* SketchPath.m in Sources */,
+				411CBEAC1A23F14A006CE565 /* SketchColorPickController.m in Sources */,
+				411CBE8A1A23EFCF006CE565 /* SketchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		411CBE851A23EFCF006CE565 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 411CBE601A23EFCE006CE565 /* Sketch */;
+			targetProxy = 411CBE841A23EFCF006CE565 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		411CBE721A23EFCE006CE565 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				411CBE731A23EFCE006CE565 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		411CBE7C1A23EFCF006CE565 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				411CBE7D1A23EFCF006CE565 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		411CBE8B1A23EFCF006CE565 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "";
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				SEPARATE_STRIP = NO;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = all;
+				VALID_ARCHS = "armv7 arm64";
+			};
+			name = Debug;
+		};
+		411CBE8C1A23EFCF006CE565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "";
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				SEPARATE_STRIP = NO;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = all;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 arm64";
+			};
+			name = Release;
+		};
+		411CBE8E1A23EFCF006CE565 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Shared/Firebase/Frameworks,
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Sketch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACH_O_TYPE = mh_execute;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				STRIP_STYLE = all;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv7 arm64";
+			};
+			name = Debug;
+		};
+		411CBE8F1A23EFCF006CE565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Shared/Firebase/Frameworks,
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Sketch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACH_O_TYPE = mh_execute;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				STRIP_STYLE = all;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv7 arm64";
+			};
+			name = Release;
+		};
+		411CBE911A23EFCF006CE565 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SketchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sketch.app/Sketch";
+			};
+			name = Debug;
+		};
+		411CBE921A23EFCF006CE565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = SketchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sketch.app/Sketch";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		411CBE5C1A23EFCE006CE565 /* Build configuration list for PBXProject "Graffiti" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				411CBE8B1A23EFCF006CE565 /* Debug */,
+				411CBE8C1A23EFCF006CE565 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		411CBE8D1A23EFCF006CE565 /* Build configuration list for PBXNativeTarget "Sketch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				411CBE8E1A23EFCF006CE565 /* Debug */,
+				411CBE8F1A23EFCF006CE565 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		411CBE901A23EFCF006CE565 /* Build configuration list for PBXNativeTarget "SketchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				411CBE911A23EFCF006CE565 /* Debug */,
+				411CBE921A23EFCF006CE565 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 411CBE591A23EFCE006CE565 /* Project object */;
+}
